@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<hibernate-mapping>
+    <class name="com.nagarro.model.User" table="USER_TABLE" catalog="ImageUtility">
+        <id name="email" type="string">
+            <column name="EMAIL" length="30"/>
+        </id>
+        <property name="firstName" type="string">
+            <column name="FIRST_NAME" length="15" not-null="true" />
+        </property>
+        <property name="middleName" type="string">
+            <column name="MIDDLE_NAME" length="15" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="LAST_NAME" length="15"/>
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
